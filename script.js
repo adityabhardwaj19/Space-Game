@@ -8,7 +8,7 @@ setTimeout(() => {
 }, 1000);
 document.onkeydown = function (e) {
     console.log("Key code is: ", e.keyCode)
-    if (e.keyCode == 38) {
+    if (e.keyCode == 38 && 32) {
         rocket = document.querySelector('.rocket');
         rocketY = parseInt(window.getComputedStyle(rocket, null).getPropertyValue('bottom'));
         rocket.style.bottom = rocketY + 112 + "px";
