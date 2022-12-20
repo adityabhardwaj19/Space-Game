@@ -10,7 +10,7 @@ document.onkeydown = function (e) {
     console.log("Key code is: ", e.keyCode)
     if (e.keyCode == 38) {
         rocket = document.querySelector('.rocket');
-        rocket.classList.add('animaterocket');
+        rocket.classList.add('.animaterocket');
         setTimeout(() => {
             rocket.classList.remove('animaterocket')
         }, 700);
@@ -40,7 +40,6 @@ setInterval(() => {
 
     offsetX = Math.abs(dx - ox);
     offsetY = Math.abs(dy - oy);
-    // console.log(offsetX, offsetY)
     if (offsetX < 73 && offsetY < 52) {
         gameOver.innerHTML = "Game Over - Reload to Play Again"
         obstacle.classList.remove('obstacleAni')
