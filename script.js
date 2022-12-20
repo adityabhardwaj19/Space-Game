@@ -10,7 +10,9 @@ document.onkeydown = function (e) {
     console.log("Key code is: ", e.keyCode)
     if (e.keyCode == 38) {
         rocket = document.querySelector('.rocket');
-        rocket.classList.add('.animaterocket');
+        rocketY = parseInt(window.getComputedStyle(rocket, null).getPropertyValue('bottom'));
+        rocket.style.bottom = rocketY + 112 + "px";
+        // rocket.classList.add('animaterocket');
         setTimeout(() => {
             rocket.classList.remove('animaterocket')
         }, 700);
