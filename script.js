@@ -14,7 +14,8 @@ document.onkeydown = function (e) {
         rocket.style.bottom = rocketY + 112 + "px";
         // rocket.classList.add('animaterocket');
         setTimeout(() => {
-            rocket.style.bottom = rocketY + 112 + "px";
+            rocketY = parseInt(window.getComputedStyle(rocket, null).getPropertyValue('bottom'));
+            rocket.style.bottom = rocketY - 112 + "px";
             // rocket.classList.remove('animaterocket')
         }, 700);
     }
