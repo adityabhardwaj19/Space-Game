@@ -50,11 +50,12 @@ body{
     font-size: 53px;
     text-align: center; 
     font-family: 'Ubuntu', sans-serif;
+    color: white;
 }
 
 #scoreCont{
     font-size: 25px;
-    color: #54212f;
+    color: white;
     font-weight: bold;
     position: absolute;
     right: 45px;
