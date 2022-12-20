@@ -19,16 +19,16 @@ body{
     background-image: url(rocket.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 233px;
-    height: 114px;
+    width: 175px;
+    height: 175px;
     position: absolute;
-    bottom:15px;
+    bottom:0px;
     left: 52px;
 }
 
 .obstacle{
-    width: 166px;
-    height: 113px;
+    width: 175px;
+    height: 175px;
     background-image: url(ufo.png);
     background-size: cover;
     position: absolute;
