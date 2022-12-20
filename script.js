@@ -14,7 +14,8 @@ document.onkeydown = function (e) {
         rocket.style.bottom = rocketY + 112 + "px";
         // rocket.classList.add('animaterocket');
         setTimeout(() => {
-            rocket.classList.remove('animaterocket')
+            rocket.style.bottom = rocketY + 112 + "px";
+            // rocket.classList.remove('animaterocket')
         }, 700);
     }
     if (e.keyCode == 39) {
