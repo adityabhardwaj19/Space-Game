@@ -9,31 +9,31 @@ setTimeout(() => {
 document.onkeydown = function (e) {
     console.log("Key code is: ", e.keyCode)
     if (e.keyCode == 38) {
-        dino = document.querySelector('.dino');
-        dino.classList.add('animateDino');
+        rocket = document.querySelector('.rocket');
+        rocket.classList.add('animaterocket');
         setTimeout(() => {
-            dino.classList.remove('animateDino')
+            rocket.classList.remove('animaterocket')
         }, 700);
     }
     if (e.keyCode == 39) {
-        dino = document.querySelector('.dino');
-        dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-        dino.style.left = dinoX + 112 + "px";
+        rocket = document.querySelector('.rocket');
+        rocketX = parseInt(window.getComputedStyle(rocket, null).getPropertyValue('left'));
+        rocket.style.left = rocketX + 112 + "px";
     }
     if (e.keyCode == 37) {
-        dino = document.querySelector('.dino');
-        dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-        dino.style.left = (dinoX - 112) + "px";
+        rocket = document.querySelector('.rocket');
+        rocketX = parseInt(window.getComputedStyle(rocket, null).getPropertyValue('left'));
+        rocket.style.left = (rocketX - 112) + "px";
     }
 }
 
 setInterval(() => {
-    dino = document.querySelector('.dino');
+    rocket = document.querySelector('.rocket');
     gameOver = document.querySelector('.gameOver');
     obstacle = document.querySelector('.obstacle');
 
-    dx = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
-    dy = parseInt(window.getComputedStyle(dino, null).getPropertyValue('top'));
+    dx = parseInt(window.getComputedStyle(rocket, null).getPropertyValue('left'));
+    dy = parseInt(window.getComputedStyle(rocket, null).getPropertyValue('top'));
 
     ox = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('left'));
     oy = parseInt(window.getComputedStyle(obstacle, null).getPropertyValue('top'));

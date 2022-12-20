@@ -14,8 +14,8 @@ body{
     height: 100vh;
 }
 
-.dino{
-    background-image: url(dino.png);
+.rocket{
+    background-image: url(rocket.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: 233px;
@@ -28,15 +28,15 @@ body{
 .obstacle{
     width: 166px;
     height: 113px;
-    background-image: url(dragon.png);
+    background-image: url(ufo.png);
     background-size: cover;
     position: absolute;
     bottom: 0;
     left: 44vw;
 }
 
-.animateDino{
-    animation: dino 0.6s linear;
+.animateRocket{
+    animation: rocket 0.6s linear;
 }
 
 .obstacleAni{
@@ -64,7 +64,7 @@ body{
     border-radius: 10px;
 }
 
-@keyframes dino{
+@keyframes .rocket{
     0%{
         bottom: 0;
     }
